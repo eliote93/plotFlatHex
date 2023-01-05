@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{ECFFBCEE-8FBF-4C13-8D85-3695E882B639}">
+	<Platforms>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" MultiProcessorCompilation="true" Optimization="optimizeDisabled" Preprocess="preprocessYes" AdditionalIncludeDirectories="C:\Program Files\MPICH2\include;$(ProjectDir)/src" PreprocessorDefinitions="FMM" OpenMP="OpenMPParallelCode" RealKIND="realKIND8" Traceback="true" BoundsCheck="true" UseMkl="mklParallel" Interfaces="true"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="C:\Program Files\MPICH2\lib" GenerateDebugInformation="true" SubSystem="subSystemConsole" AdditionalDependencies="fmpich2.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" MultiProcessorCompilation="true" Preprocess="preprocessYes" PreprocessorDefinitions="FMM" OpenMP="OpenMPParallelCode" RealKIND="realKIND8" UseMkl="mklParallel"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd">
+		<File RelativePath=".\defines.h"/></Filter>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<File RelativePath=".\src\CalPowErr.f90"/>
+		<File RelativePath=".\src\ChkInp.f90"/>
+		<File RelativePath=".\src\Data.f90"/>
+		<File RelativePath=".\src\dmalloc.f90"/>
+		<File RelativePath=".\src\EditOut.f90"/>
+		<File RelativePath=".\src\Main.f90"/>
+		<File RelativePath=".\src\param.f90"/>
+		<File RelativePath=".\src\PlotPow.f90"/>
+		<File RelativePath=".\src\ReadInp.f90"/>
+		<File RelativePath=".\src\ReadMC.f90"/>
+		<File RelativePath=".\src\ReadnTF.f90"/>
+		<File RelativePath=".\src\UtilIO.f90"/></Filter></Files>
+	<Globals/></VisualStudioProject>
