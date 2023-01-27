@@ -1,4 +1,4 @@
-function PLOT_xy(fid, fn, ndat, l3d, lerr, lrel, istr, igcf, fgca, xylmin, xylmax, xymx, lbrad, XX, YY)
+function PLOT_xy(fid, fn, ndat, l3d, lerr, lrel, istr, igcf, fgca, xylmin, xylmax, xymx, lbrad, XX, YY, lfnflag)
 %% READ : Info.
 nxy = ndat(1, 1);
 
@@ -91,10 +91,14 @@ else
     en = "pow";
 end
 
-if l3d
-    gn = strcat(fn, "_xy_", en, "_", cn, ".png");
+if lfnflag
+    if l3d
+        gn = strcat(fn, "_xy_", en, "_", cn, ".png");
+    else
+        gn = strcat(fn, "_xy_", en, ".png");
+    end
 else
-    gn = strcat(fn, "_xy_", en, ".png");
+    gn = strcat(fn, ".png");
 end
 
 saveas(f1, gn);

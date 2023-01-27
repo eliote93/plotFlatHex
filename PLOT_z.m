@@ -1,4 +1,4 @@
-function PLOT_z(fid, fn, ndat, lerr, lrel, istr, igcf, fgca, zlmin, zlmax, lbax, grdhgt)
+function PLOT_z(fid, fn, ndat, lerr, lrel, istr, igcf, fgca, zlmin, zlmax, lbax, grdhgt, lfnflag)
 %% READ : Info.
 nz = ndat(2, 1);
 
@@ -97,8 +97,13 @@ else
     en = "pow";
 end
 
-%gn = strcat(fn, "_z_", en, cn, ".png");
-gn = strcat(fn, "_z_", en, ".png");
+if lfnflag
+    %gn = strcat(fn, "_z_", en, cn, ".png");
+    gn = strcat(fn, "_z_", en, ".png");
+else
+    gn = strcat(fn, ".png");
+end
+
 saveas(f2, gn);
 close(f2);
 end
