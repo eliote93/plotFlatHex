@@ -104,6 +104,8 @@ else
     gn = strcat(fn, ".png");
 end
 
+cd out\;
 saveas(f2, gn);
 close(f2);
+cd ..\;
 end

@@ -61,8 +61,8 @@ end
 %% CNTL : Layout
 c = colorbar;
 set(c, 'FontSize', 30);
-xlabel('Distance from Center, cm', 'FontSize', 30, 'FontWeight', 'bold')
-ylabel('Distance from Center, cm', 'FontSize', 30, 'FontWeight', 'bold')
+xlabel('Distance from Center (cm)', 'FontSize', 30, 'FontWeight', 'bold')
+ylabel('Distance from Center (cm)', 'FontSize', 30, 'FontWeight', 'bold')
 set(gca, 'FontSize', 30, 'FontWeight', 'bold')
 c.Label.String = lbrad;
 
@@ -101,6 +101,8 @@ else
     gn = strcat(fn, ".png");
 end
 
+cd out\;
 saveas(f1, gn);
 close(f1);
+cd ..\;
 end

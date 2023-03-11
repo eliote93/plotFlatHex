@@ -1,5 +1,6 @@
 clc; close all; clear;
-fn = 'MC LC RX 000 21';
+cd ../;
+fn = 'TPN LC RX 100 20';
 lrel = false; lplotxypln = false; lfnflag = false;
 %% READ & INIT
 [ndat, lerr, l3d, istr, igcf, fgca, xylmin, xylmax, zlmin, zlmax, lbrad, lbax] = READ_info(fn);

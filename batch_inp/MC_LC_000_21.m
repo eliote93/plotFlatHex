@@ -1,4 +1,5 @@
 clc; close all; clear;
+cd ../;
 fn = 'MC LC RX 000 21';
 lrel = false; lplotxypln = false; lfnflag = false;
 %% READ & INIT
